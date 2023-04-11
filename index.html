@@ -2,9 +2,95 @@
 <html>
 <head>
     
-    <title>Document</title>
+    <title>Html, Css Elements</title>
+    <style>
+        table, th, td{
+            border:1px solid rgb(255, 255, 0);"
+        }
+    </style>
 </head>
 <body>
+    <h1>SEGOVIA'S COMPANY</h1> <!-- headers are h1,h2,h3,h4,h5,h6-->
+    <p>We are searching the progress on technology and we would like you to join us</p>
+    <hr> <!-- hr is use to split text with a line-->
+    <!----><!-- this is a comment labbel the user will not see this green text-->
+    <h2> Html Structure</h2>
+    <p>We will see labels, tags as <span style="color:rgb(0, 255, 255)">span </span>this tag is usefull for to make 
+    <br><!--br is use to jump a line the text if i add <br><br> will jump twice and go on-->differences inside the text if you wanna see more about it searching with this hyperlink<a href="https://www.youtube.com/" targe="_blank"><!--Hyperlink tag -->Go to YouTube</a>.
+    </p>
+    <img src="img/flower.png" width="200"/><!-- img no need closing slash-->
+    <ul>
+        <li> Html</li>
+        <li>Css</li>
+        <li>Jss</li>
+    </ul>
+    <ol>
+        <li value="50">Ruby</li>
+        <li>Phyton</li> 
+        <li>React</li><br>
+        <ol>
+            <li style="list-style-type: lower-roman;">Window</li>
+            <li style="list-style-type: lower-roman;">IOS</li>
+            <li style="list-style-type: lower-roman;">Linux</li>
+        </ol>
+    </ol>
+    <table style="width:500px;">
+        <thead> <!--thead is use for head of the esquare no modifies structure, only is use for some webs-->
+            <tr>
+                <th>Producto</th>
+                <th>Costo</th>
+                
+            </tr>
+        </thead>
+        <tbody> <!--t body is as  thead is only use for group and for some webs-->
+            <tr>
+                <td>Phone</td>
+                <td>30,000$</td>
+                
+            </tr>
+            <tr>
+                <td>Pc</td>
+                <td>12,000$</td>
     
+            </tr> 
+        </tbody>
+        <tfoot>
+            <td>Total</td>
+            <td>42,000$</td>
+        </tfoot>
+
+    </table>
+    <hr>
+
+
+
+
+<form action="/formulario" method="post">  <!--method =POST, is a way to send data and you can see user's information on URL, method= GET you can see the information inside the URL  -->
+        <label for="name"> Name:</label><!--for and id inside is for, if user push on square or name user can to write the name-->
+        <input value="Antonio" id="name" name="name" placeholder="key in here your name"/> <!--name is important 'cause will recieve the keyed in value'-->
+        <input type="checkbox"/> <!--value us a defect value if i set Antonio as value, input=Antonio-->
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="key in your password"/>
+    <input type="checkbox"/>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="key in your email"/>
+    <input type="checkbox"/>
+    <br>
+    <label for="cv">Add Curriculum Vitae:</label>
+    <input type="file" id="cv" name="file" placeholder="fil"/>
+    <p> Yes add<input type="radio"/>Not to add<input type="radio"/></p>
+    <label for="comment">Comment</label>
+    <textarea cols="50" rows="10" id="comment" placeholder="Do you have any comment?, please input it here" name="comment"></textarea>
+    <!--cols is equal to column and rows to upright rows--><br>
+    <input type="submit"/><br>
+    <button img="" type="button"> Send Data</button><br><!--with javascript we say what to do when push it-->
+    <button type="submit">Submit button</button><br><!---->
+    <button type="reset">reset button</button><br><!--when we push that button system restore initial values-->
+
+</form>
+
+
 </body>
 </html>
